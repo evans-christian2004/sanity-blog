@@ -1,5 +1,5 @@
+import { SanityLive } from "@/sanity/lib/live";
 import type { Metadata } from "next";
-import "./globals.css";
 
 export default function RootLayout({
   children,
@@ -10,6 +10,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
+        <SanityLive />
       </body>
     </html>
   );
