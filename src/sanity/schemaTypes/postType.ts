@@ -54,7 +54,7 @@ export const postType = defineType({
     }),
     defineField({
       name: 'body',
-      type: 'markdown',
+      type: 'blockContent',
     }),
   ],
   preview: {
