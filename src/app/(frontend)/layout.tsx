@@ -1,5 +1,12 @@
 import { Header } from "@/components/Header";
 import { SanityLive } from "@/sanity/lib/live";
+import { Inter } from 'next/font/google';
+
+const inter = Inter(
+  {
+    subsets: ['latin']
+  }
+)
 
 export default function FrontendLayout({
   children,
@@ -7,7 +14,7 @@ export default function FrontendLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <section className="bg-white min-h-screen">
+    <section className={`${inter.className} bg min-h-screen`}>
       <Header />
       {children}
       <SanityLive />
