@@ -17,7 +17,7 @@ export default async function Page() {
           <path d="M443 195.5C443 304.852 321 215.396 194.5 185.5C69.5003 150.896 0 175.352 0 66C0 -43.3524 130.445 16.9999 252.5 16.9999C387.001 17 443 86.1476 443 195.5Z"/>
         </svg>
         <div className="flex flex-col mt-[15vh] md:mt-[25vh] mx-auto max-w-2/3 ">
-          <h1 className="text-2xl md:text-5xl text-center mb-10 md:mb-20">Hi I'm <span className="font-bold hover:font-thin transition-all ease-in-out">Chris</span>, this is where I document my journey as a developer</h1>
+          <h1 className="text-2xl md:text-5xl text-center mb-10 md:mb-20">Hi I&apos;m <span className="font-bold hover:font-thin transition-all ease-in-out">Chris</span>, this is where I document my journey as a developer</h1>
           <button className="md:hidden block m-auto bg-black text-sm whitespace-nowrap text-green-500 font-mono px-4 py-2 border-2 border-green-500 
               hover:border-black hover:bg-green-500 hover:text-black hover:shadow-2xl hover:shadow-green-300 transition-all ease-in"
               ><Link className="flex items-center gap-2" href="/posts">Check it Out <div className="text-xl">&rarr;</div></Link></button>
