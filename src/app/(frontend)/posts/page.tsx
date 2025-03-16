@@ -12,7 +12,10 @@ export default async function Page() {
     <main className="container mx-auto grid grid-cols-1 gap-6">
       
       <Title>Entries</Title>
-      <div className="mt-7 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-5 p-5">
+      <div className="mx-auto mt-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-content-evenly gap-6 p-5">
+        {posts.map((post) => (
+          <PostCard key={post._id} {...post} />
+        ))}
         {posts.map((post) => (
           <PostCard key={post._id} {...post} />
         ))}
