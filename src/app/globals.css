@@ -2,8 +2,10 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #ffffff;
+  --background: #f8f8f8;
   --foreground: #171717;
+  --card-effect-mod: 4rem;
+
 }
 
 body {
@@ -61,4 +63,13 @@ body {
 @keyframes svg-color-cycle3{
   0%, 100% {fill: #00FF88}
   30% {fill: rgb(4, 147, 49)}
+}
+
+.card-effect {
+  background: rgb(239,255,243);
+  background: linear-gradient(0deg, rgba(239,255,243,1) 0%, rgba(248,248,248,1) 30%);
+/*
+light-green: #effff3
+gray: #f8f8f8
+*/
 }

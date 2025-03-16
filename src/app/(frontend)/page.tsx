@@ -29,9 +29,10 @@ export default async function Page() {
           <div className="hidden md:block h-30">
             <div className="bg-black p-5 rounded-lg shadow-lg border-12 border-gray-200 w-96 text-left m-auto">              
               <h1 className="overflow-hidden whitespace-nowrap border-r-2 text-green-500 font-mono border-green-500 w-fit animate-typing">&gt; Welcome to my Terminal</h1>
-              <button className="text-green-500 font-mono px-4 py-2 border-2 border-green-500 
+              {/* Desktop CTA Button */}
+              <button className="text-green-500 font-mono px-4 py-2 border-2 border-green-500 group
               hover:border-black hover:bg-green-500 hover:text-black hover:shadow-2xl hover:shadow-green-300 transition-all ease-in ml-[25%] mt-10"
-              ><Link className="flex items-center gap-2" href="/posts">Check it Out <div className="text-xl">&rarr;</div></Link></button>
+              ><Link className="flex items-center gap-2" href="/posts">Check it Out <div className="text-xl group-hover:ml-1.5 transition-all ease-in">&rarr;</div></Link></button>
             </div>
           </div>
           

@@ -6,6 +6,7 @@ export const POSTS_QUERY =
   title,
   slug,
   body,
+  description,
   mainImage,
   publishedAt,
   "categories": coalesce(

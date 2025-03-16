@@ -12,7 +12,7 @@ export default async function Page() {
     <main className="container mx-auto grid grid-cols-1 gap-6">
       
       <Title>Entries</Title>
-      <div className="flex flex-col gap-24 py-12">
+      <div className="mt-7 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 gap-5 p-5">
         {posts.map((post) => (
           <PostCard key={post._id} {...post} />
         ))}
