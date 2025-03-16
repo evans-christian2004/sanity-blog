@@ -4,7 +4,7 @@ import { Title } from "@/components/Title";
 export default async function Page() {
   return (
     <section className="container mx-auto grid grid-cols-1 gap-6 p-12">
-        {/* {blured SVG background} */}
+        {/* blured SVG background */}
         <svg className="absolute left-0 md:left-40 top-20 w-[60%] h-[60%] -z-10 blur-3xl opacity-30 animate-svg1" 
         width="554" height="396" viewBox="0 0 554 396" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M554 233.5C554 342.852 343.055 396 221 396C98.9451 396 0 307.352 0 198C0 88.6476 98.9451 0 221 0C343.055 0 554 124.148 554 233.5Z"/>

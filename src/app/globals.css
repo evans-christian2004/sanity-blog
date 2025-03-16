@@ -20,11 +20,12 @@ body {
   --color-computer-bg: #e7ccab
 }
 
-
+/* Glass effect class for nav bar */
 .glass {
   backdrop-filter: blur(30px);
 }
 
+/* Langing Page Terminal Window Typing Effect */
 .animate-typing {
   padding-right: .1em;
   border-right: .15em solid #05df72;
@@ -42,6 +43,7 @@ body {
   to { width: 65%; }
 }
 
+/* Landing page blurred background effect*/
 .animate-svg1 {
   animation: svg-color-cycle1 6s infinite;
 }
