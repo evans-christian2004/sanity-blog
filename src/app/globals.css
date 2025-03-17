@@ -67,11 +67,24 @@ body {
   30% {fill: rgb(4, 147, 49)}
 }
 
+@keyframes shake{
+  0% { transform: rotate(0deg); }
+  13% { transform: rotate(15deg); }
+  25% { transform: rotate(-15deg); }
+  50% { transform: rotate(15deg); }
+  75% { transform: rotate(-15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.logo-shake:hover {
+  animation: shake 1s;
+}
+
 .card-effect {
   background: rgb(239,255,243);
   background: linear-gradient(0deg, rgba(239,255,243,1) 0%, rgba(248,248,248,1) 30%);
-/*
-light-green: #effff3
-gray: #f8f8f8
-*/
+  /*
+  light-green: #effff3
+  gray: #f8f8f8
+  */
 }
