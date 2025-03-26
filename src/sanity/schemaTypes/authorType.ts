@@ -36,6 +36,11 @@ export const authorType = defineType({
         }),
       ],
     }),
+    defineField({
+      name: 'highlight_post',
+      type: 'reference',
+      to: {type: 'post'}
+    })
   ],
   preview: {
     select: {

@@ -48,3 +48,15 @@ export const POST_QUERY =
     image
   }
 }`)
+
+export const HIGHLIGHT_QUERY = 
+  defineQuery(`*[_type == "author" && defined(highlight_post)] {
+    highlight_post->{
+      title,
+      slug,
+      description,
+      mainImage,
+      publishedAt,
+      "authorName": author->name
+    }
+  }`)
