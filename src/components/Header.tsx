@@ -16,7 +16,7 @@ export function Header() {
           className={`${oxanium.className} flex gap-3 items-center md:text-2xl font-semibold`}
           href="/"
         >
-          <Image className='rounded-lg logo-shake transition-all ease-in' src="/logo.svg" width="35" height="35" alt='terminal logo'/>
+          <Image className='rounded-lg logo-shake transition-all ease-in-out' src="/logo.svg" width="35" height="35" alt='terminal logo'/>
         </Link>
         <ul className="flex items-center gap-4 font-semibold text-slate-700">
           <li>

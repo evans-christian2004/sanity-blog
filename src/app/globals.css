@@ -27,7 +27,7 @@ body {
 }
 
 .glass-body {
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(50px);
 }
 
 /* Langing Page Terminal Window Typing Effect */
