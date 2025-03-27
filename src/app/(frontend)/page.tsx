@@ -22,16 +22,16 @@ export default async function Page() {
         <div className="flex flex-col mt-[15vh] md:mt-[18vh] mx-auto max-w-2/3 ">
           <h1 className="text-2xl md:text-5xl text-center mb-10 md:mb-20">Hi I&apos;m <span className="font-bold hover:font-thin transition-all ease-in-out">Chris</span>, this is where I document my journey as a developer</h1>
           {/* Mobile CTA Button */}
-          <button className="md:hidden block m-auto bg-black text-sm whitespace-nowrap text-green-500 font-mono px-4 py-2 border-2 border-green-500 
-              hover:border-black hover:bg-green-500 hover:text-black hover:shadow-2xl hover:shadow-green-300 transition-all ease-in"
+          <button className="md:hidden block m-auto bg-black text-sm whitespace-nowrap text-primary-green font-mono px-4 py-2 border-2 border-primary-green 
+              hover:border-black hover:bg-primary-green hover:text-black hover:shadow-2xl hover:shadow-green-300 transition-all ease-in"
               ><Link className="flex items-center gap-2" href="/posts">Check it Out <div className="text-xl">&rarr;</div></Link></button>
           {/* Desktop CTA Button w/ simulated terminal window */}
           <div className="hidden md:block h-30">
             <div className="bg-black p-5 rounded-lg shadow-lg border-12 border-gray-200 w-96 text-left m-auto">              
-              <h1 className="overflow-hidden whitespace-nowrap border-r-2 text-green-500 font-mono border-green-500 w-fit animate-typing">&gt; Welcome to my Terminal</h1>
+              <h1 className="overflow-hidden whitespace-nowrap border-r-2 text-primary-green font-mono border-primary-green w-fit animate-typing">&gt; Welcome to my Terminal</h1>
               {/* Desktop CTA Button */}
-              <button className="text-green-500 font-mono px-4 py-2 border-2 border-green-500 group
-              hover:border-black hover:bg-green-500 hover:text-black hover:rounded-2xl hover:shadow-2xl hover:shadow-green-300 transition-all ease-in ml-[25%] mt-10"
+              <button className="text-primary-green font-mono px-4 py-2 border-2 border-primary-green group
+              hover:border-black hover:bg-primary-green hover:text-black hover:rounded-2xl hover:shadow-2xl hover:shadow-green-300 transition-all ease-in ml-[25%] mt-10"
               ><Link className="flex items-center gap-2" href="/posts">Check it Out <div className="text-xl group-hover:ml-1.5 transition-all ease-in">&rarr;</div></Link></button>
             </div>
           </div>

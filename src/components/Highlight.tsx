@@ -10,17 +10,19 @@ const Highlight = ({ highlight_post }: { highlight_post: HIGHLIGHT_QUERYResult[0
     if(!highlight_post) return null;
 
   return (
-    <Link className='mb-10'
+    <Link className='mb-10 group'
     href={`/posts/${highlight_post.slug?.current}`}>
         {highlight_post.mainImage ? (
-                    <Image className='h-[5vh] md:h-[75vh] w-full rounded-t-4xl md:rounded-4xl mt-1 object-cover'
+                    <Image className='h-[5vh] md:h-[75vh] w-full rounded-t-4xl md:rounded-4xl mt-1 object-cover 
+                    hover:border-green-400 hover:border-2 transition-all ease-in-out duration-300'
                       src={urlFor(highlight_post.mainImage).width(800).height(500).url()}
                       width={800}
                       height={500}
                       alt={highlight_post.mainImage.alt || highlight_post.title || ''}
                     />
                   ) : null}
-        <div className="p-6  bg-white shadow-lg md:w-3/7 rounded-b-2xl md:rounded-2xl md:absolute top-[25vh] left-20 lg:block lg:top-[55vh] lg:left-1/6">
+        <div className="p-6  bg-white shadow-lg md:w-3/7 rounded-b-2xl md:rounded-2xl md:absolute top-[25vh] left-20 lg:block lg:top-[55vh] lg:left-1/6
+        lg:group-hover:top-[50vh] transition-all ease-in-out duration-500">
             <div className="flex flex-col gap-2">
                 <div className="flex flex-wrap gap-1">
                     <Categories categories={highlight_post.categories} />

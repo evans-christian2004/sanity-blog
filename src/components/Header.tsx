@@ -22,8 +22,8 @@ export function Header() {
           <li>
             <Link 
               className="" href="https://www.linkedin.com/in/evanschristian" passHref={true}
-            ><div className="flex flex-row gap-1 hover:gap-3 text-green-500 font-mono px-4 py-2 border-2 border-green-500 bg-black
-              hover:border-black hover:bg-green-500 hover:text-black hover:rounded-2xl hover:shadow-2xl hover:shadow-green-300 transition-all"
+            ><div className="flex flex-row gap-1 hover:gap-3 text-primary-green font-mono px-4 py-2 border-2 border-primary-green bg-black
+              hover:border-black hover:bg-primary-green hover:text-black hover:rounded-2xl hover:shadow-2xl hover:shadow-green-300 transition-all duration-300"
              >
               <span className='block'>&lt;</span>
               <span className='block'>About Me</span>
