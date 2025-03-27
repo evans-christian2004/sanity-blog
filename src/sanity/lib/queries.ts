@@ -57,6 +57,14 @@ export const HIGHLIGHT_QUERY =
       description,
       mainImage,
       publishedAt,
+      "categories": coalesce(
+        categories[]->{
+          _id,
+          slug,
+          title
+        },
+        []
+    ),
       "authorName": author->name
     }
   }`)

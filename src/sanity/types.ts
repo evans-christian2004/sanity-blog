@@ -434,7 +434,7 @@ export type POST_QUERYResult = {
   } | null;
 } | null;
 // Variable: HIGHLIGHT_QUERY
-// Query: *[_type == "author" && defined(highlight_post)] {    highlight_post->{      title,      slug,      description,      mainImage,      publishedAt,      "authorName": author->name    }  }
+// Query: *[_type == "author" && defined(highlight_post)] {    highlight_post->{      title,      slug,      description,      mainImage,      publishedAt,      "categories": coalesce(        categories[]->{          _id,          slug,          title        },        []    ),      "authorName": author->name    }  }
 export type HIGHLIGHT_QUERYResult = Array<{
   highlight_post: {
     title: string | null;
@@ -453,6 +453,11 @@ export type HIGHLIGHT_QUERYResult = Array<{
       _type: "image";
     } | null;
     publishedAt: string | null;
+    categories: Array<{
+      _id: string;
+      slug: Slug | null;
+      title: string | null;
+    }> | Array<never>;
     authorName: string | null;
   } | null;
 }>;
@@ -464,6 +469,6 @@ declare module "@sanity/client" {
     "*[_type == \"post\" && defined(slug.current)]|order(publishedAt desc)[0...12]{\n  _id,\n  title,\n  slug,\n  body,\n  description,\n  mainImage,\n  publishedAt,\n  \"categories\": coalesce(\n    categories[]->{\n      _id,\n      slug,\n      title\n    },\n    []\n  ),\n  author->{\n    name,\n    image\n  }\n}": POSTS_QUERYResult;
     "*[_type == \"post\" && defined(slug.current)]{ \n  \"slug\": slug.current\n}": POSTS_SLUGS_QUERYResult;
     "*[_type == \"post\" && slug.current == $slug][0]{\n  _id,\n  title,\n  body,\n  mainImage,\n  publishedAt,\n  \"categories\": coalesce(\n    categories[]->{\n      _id,\n      slug,\n      title\n    },\n    []\n  ),\n  author->{\n    name,\n    image\n  }\n}": POST_QUERYResult;
-    "*[_type == \"author\" && defined(highlight_post)] {\n    highlight_post->{\n      title,\n      slug,\n      description,\n      mainImage,\n      publishedAt,\n      \"authorName\": author->name\n    }\n  }": HIGHLIGHT_QUERYResult;
+    "*[_type == \"author\" && defined(highlight_post)] {\n    highlight_post->{\n      title,\n      slug,\n      description,\n      mainImage,\n      publishedAt,\n      \"categories\": coalesce(\n        categories[]->{\n          _id,\n          slug,\n          title\n        },\n        []\n    ),\n      \"authorName\": author->name\n    }\n  }": HIGHLIGHT_QUERYResult;
   }
 }

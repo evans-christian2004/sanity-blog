@@ -10,7 +10,7 @@ const oxanium = Oxanium(
 
 export function Header() {
   return (
-    <div className="glass border-b-1 border-bg-border top-0 sticky">
+    <div className="glass border-b-1 border-bg-border top-0 sticky z-10">
       <header className="flex items-center justify-between p-4 container mx-auto">
         <Link
           className={`${oxanium.className} flex gap-3 items-center md:text-2xl font-semibold`}
@@ -21,10 +21,15 @@ export function Header() {
         <ul className="flex items-center gap-4 font-semibold text-slate-700">
           <li>
             <Link 
-              className="hover:text-green-400 transition-colors"
-              href="/posts"
-            >
-              Posts
+              className="" href="https://www.linkedin.com/in/evanschristian" passHref={true}
+            ><div className="flex flex-row gap-1 hover:gap-3 text-green-500 font-mono px-4 py-2 border-2 border-green-500 bg-black
+              hover:border-black hover:bg-green-500 hover:text-black hover:rounded-2xl hover:shadow-2xl hover:shadow-green-300 transition-all"
+             >
+              <span className='block'>&lt;</span>
+              <span className='block'>About Me</span>
+              <span className='block'>/&gt;</span>
+              </div>
+              
             </Link>
           </li>
         </ul>
