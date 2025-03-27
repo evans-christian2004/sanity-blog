@@ -10,7 +10,7 @@ const oxanium = Oxanium(
 
 export function Header() {
   return (
-    <div className="glass border-b-1 border-bg-border top-0 sticky z-10">
+    <div className="glass-header border-b-1 border-bg-border top-0 sticky z-10">
       <header className="flex items-center justify-between p-4 container mx-auto">
         <Link
           className={`${oxanium.className} flex gap-3 items-center md:text-2xl font-semibold`}

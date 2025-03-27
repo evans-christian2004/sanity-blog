@@ -13,7 +13,7 @@ const Highlight = ({ highlight_post }: { highlight_post: HIGHLIGHT_QUERYResult[0
     <Link className='mb-10 group'
     href={`/posts/${highlight_post.slug?.current}`}>
         {highlight_post.mainImage ? (
-                    <Image className='h-[5vh] md:h-[75vh] w-full rounded-t-4xl md:rounded-4xl mt-1 object-cover 
+                    <Image className='h-[45vh] md:h-[75vh] w-full rounded-t-4xl md:rounded-4xl mt-1 object-cover 
                     hover:border-green-400 hover:border-2 transition-all ease-in-out duration-300'
                       src={urlFor(highlight_post.mainImage).width(800).height(500).url()}
                       width={800}

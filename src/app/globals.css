@@ -22,8 +22,12 @@ body {
 }
 
 /* Glass effect class for nav bar */
-.glass {
+.glass-header {
   backdrop-filter: blur(30px);
+}
+
+.glass-body {
+  backdrop-filter: blur(40px);
 }
 
 /* Langing Page Terminal Window Typing Effect */
